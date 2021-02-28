@@ -5,17 +5,17 @@ public class SayiBasamaklariniToplama {
   public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
             System.out.print("Sayınızı giriniz: ");
-            int s = input.nextInt();
+            int sayi = input.nextInt();
 
-            System.out.println("Basamakları toplamı:  " + toplama(s));
+            System.out.println("Basamakları toplamı:  " + toplama(sayi));
 
         }
 
-        public static int toplama(int s) {
+        public static int toplama(int sayi) {
             int toplama = 0;
-            while (s != 0) {
-                toplama += s % 10;
-                s /= 10;
+            while (sayi != 0) {
+                toplama += sayi % 10;
+                sayi /= 10;
             }
             return toplama;
         }
